@@ -47,7 +47,7 @@ public class TaskCarousel {
       boolean elementFound = false;
         while(!elementFound){
             for(int i = 0; i < carousel.size(); i++){
-                    if(previous == carousel.size()-1 && carousel.get(i).isFinished()){
+                    if(i == carousel.size()-1 && carousel.get(i).isFinished()){
                         previous = -1;
                         continue;
                     }
