@@ -1,4 +1,4 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks;
 
 public class CompleteByRequestTask implements Task {
 

@@ -1,5 +1,8 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.task_carousel.src.test.java.com.epam.rd.autotasks;
 
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.CompleteByRequestTask;
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.CountDownTask;
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.Task;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

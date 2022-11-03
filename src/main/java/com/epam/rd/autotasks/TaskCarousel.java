@@ -1,4 +1,4 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks;
 
 import java.util.LinkedList;
 
@@ -46,15 +46,18 @@ public class TaskCarousel {
 
       boolean elementFound = false;
         while(!elementFound){
-            for(int i = 0; i < carousel.size(); i++){
-                    if(i == carousel.size()-1 && carousel.get(i).isFinished()){
+            int length = carousel.size();
+            for(int i = 0; i < length; i++){
+                Task task = carousel.get(i);
+                boolean taskIsFinished = task.isFinished();
+                    if(i == length-1 && taskIsFinished){
                         previous = -1;
                         continue;
                     }
-                    if(!carousel.get(i).isFinished()){
+                    if(!taskIsFinished){
                          if(i > previous){
-                            carousel.get(i).execute();
-                            previous = i != carousel.size()-1 ? i : -1;
+                            task.execute();
+                            previous = i != length-1 ? i : -1;
                             elementFound = true;
                             break;
                         }
@@ -94,8 +97,7 @@ public class TaskCarousel {
         boolean isEmpty = false;
         for(int i = 0; i < carousel.size(); i++){
             if (carousel.get(i) == null){
-                isEmpty = true;
-            }
+                isEmpty = true;}
             else {
                 if (carousel.get(i).isFinished()) {
                     isEmpty = true;
@@ -104,7 +106,7 @@ public class TaskCarousel {
                     isEmpty = false;
                     break;
                 }
-        }
+            }
         }
         return isEmpty;
     }

@@ -1,17 +1,19 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.task_carousel.src.test.java.com.epam.rd.autotasks;
 
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.CompleteByRequestTask;
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.CountDownTask;
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.TaskCarousel;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Queue;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.AssertJUnit.assertTrue;
+
 
 class TaskCarouselTest {
 

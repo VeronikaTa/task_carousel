@@ -1,11 +1,13 @@
-package com.epam.rd.autotasks;
+package com.epam.training.student_veronika_tarasova.task_carousel.src.test.java.com.epam.rd.autotasks;
 
+import com.epam.training.student_veronika_tarasova.task_carousel.src.main.java.com.epam.rd.autotasks.CompleteByRequestTask;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CompleteByRequestTaskTest {
 
